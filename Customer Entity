@@ -21,4 +21,7 @@ private int id;
 private String name;
 private String email;
 private String gender;
+@OneToMany(targetEntity = Product.class,cascade = CascadeType.All)
+@JoinColumn(name = "cp_fk",referenceColumnName = "id")
+private List<Product> products;
 }
