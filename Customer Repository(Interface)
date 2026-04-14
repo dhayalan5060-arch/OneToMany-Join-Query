@@ -5,7 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CutomerRepository extends JpaRepository<Customer,Integer> {  //<Entity, dataType of primaryKey)
 
-    
-                                                                            
+// we need to fetch customer name and product name usinf join query.
 
+@Query("SELECT c.name, p.productName FROM Customer c JOIN c.products p")
+ public String getJoinInformation();
+    
   }
