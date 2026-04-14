@@ -1,0 +1,11 @@
+package com.javatechie.jpa.repository;
+
+import com.javatechie.jpa.entity.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Customer,Integer> {  //<Entity, dataType of primaryKey)
+
+
+                                                                            
+
+  }
