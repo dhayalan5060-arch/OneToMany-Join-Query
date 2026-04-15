@@ -1,1 +1,8 @@
+puclic class OrderResponse {
 
+
+
+private String namr;
+private String productName;
+
+}
