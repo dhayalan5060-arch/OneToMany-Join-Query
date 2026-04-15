@@ -21,5 +21,8 @@ return customerRepository.save(request.getCustomer());
 @GetMapping("/findAllOrders")
 public List<Customer> findAllOrders() {
   return customerRepository.findAll();
+@GetMapping("/getInfo")
+public Lost<OrderResponse> getJoinInformation() {
+return customerRepository.getJoinInformation();
 }
 }
